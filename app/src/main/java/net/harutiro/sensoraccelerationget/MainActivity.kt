@@ -36,10 +36,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         val gyro = sensorManager?.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
 
         sensorManager?.registerListener(this, accel, SensorManager.SENSOR_DELAY_NORMAL)
-        sensorManager?.registerListener(this, gyro, SensorManager.SENSOR_DELAY_UI);
-        //sensorManager.registerListener(this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-        //sensorManager.registerListener(this, accel, SensorManager.SENSOR_DELAY_GAME);
-        //sensorManager.registerListener(this, accel, SensorManager.SENSOR_DELAY_UI);
+        sensorManager?.registerListener(this, gyro, SensorManager.SENSOR_DELAY_UI)
     }
 
     // 解除するコードも入れる!
